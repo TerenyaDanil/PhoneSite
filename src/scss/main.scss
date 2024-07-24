@@ -1,0 +1,53 @@
+* {
+    --black: #000000;
+    --white: #ffffff;
+    --gray: #bfbdb9;
+    --placeholder-gray: #bfbdb9;
+    --orange: #ff5555;
+    --desktop: 1440px;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "ClashDisplay";
+}
+
+body {
+    background-color: var(--white);
+}
+
+.wrapper {
+    will-change: transform;
+
+    overflow-x: hidden;
+}
+
+section {
+    position: relative;
+}
+
+@media screen and (max-width: 1440px) {
+    html {
+        font-size: calc((16 / 1440) * 100vw);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: calc((16 / 390) * 100vw);
+    }
+}
+
+@import "./blocks/fonts.scss";
+@import "./blocks/components.scss";
+@import "./blocks/header.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/features.scss";
+@import "./blocks/advatnages.scss";
+@import "./blocks/customizable.scss";
+@import "./blocks/testimonial.scss";
+@import "./blocks/questions.scss";
+@import "./blocks/readyTo.scss";
+@import "./blocks/footer.scss";

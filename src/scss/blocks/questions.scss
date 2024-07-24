@@ -1,0 +1,115 @@
+.questions {
+    // .questions__container
+
+    padding: 50px 0 50px 0;
+
+    // .questions__title
+
+    &__title {
+        max-width: 497px;
+        margin: 0 0 40px 0;
+    }
+
+    // .questions__wrap
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+
+    // .questions__wrap-half
+
+    &__wrap-half {
+        flex-basis: 49%;
+
+        &--left {
+            .questions__text-wrap:nth-child(odd) {
+                background-color: var(--orange);
+
+                .subtitle,
+                .text {
+                    color: var(--white);
+                }
+            }
+        }
+
+        &--right {
+            .questions__text-wrap:nth-child(even) {
+                background-color: var(--orange);
+
+                .subtitle,
+                .text {
+                    color: var(--white);
+                }
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            flex-basis: auto;
+        }
+    }
+
+    // .questions__text-wrap
+
+    &__text-wrap {
+        padding: 32px;
+
+        border-radius: 8px;
+
+        margin: 0 0 19px 0;
+
+        &:last-child {
+            margin: 0;
+        }
+
+        @media screen and (max-width: 768px) {
+            flex-basis: auto;
+
+            padding: 26px;
+        }
+    }
+
+    // .questions__subtitle
+
+    &__subtitle {
+        font-size: 28px;
+        line-height: 1;
+
+        margin: 0 0 8px 0;
+
+        max-width: 475px;
+
+        @media screen and (max-width: 768px) {
+            font-size: 24px;
+
+            max-width: 100%;
+        }
+    }
+
+    // .questions__text
+
+    &__text {
+        @media screen and (max-width: 768px) {
+            font-size: 14px;
+        }
+    }
+
+    // .questions__star
+
+    &__star {
+        top: 73px;
+        left: 602px;
+
+        transform: rotate(25deg);
+
+        @media screen and (max-width: 768px) {
+            top: -70px;
+            left: auto;
+            right: 50px;
+        }
+    }
+}

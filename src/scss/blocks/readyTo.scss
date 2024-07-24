@@ -1,0 +1,241 @@
+.readyTo {
+    // .readyTo__container
+    padding: 103px 0 50px 0;
+
+    margin: 0 0 57px 0;
+
+    @media screen and (max-width: 768px) {
+        padding: 50px 0 50px 0;
+
+        margin: 0;
+    }
+
+    // .readyTo__wrap
+
+    &__wrap {
+        background-color: var(--black);
+
+        border-radius: 8px;
+
+        padding: 156px 77px;
+
+        overflow: hidden;
+
+        @media screen and (max-width: 768px) {
+            padding: 70px 35px;
+        }
+    }
+
+    // .readyTo__text-wrap
+
+    &__text-wrap {
+        position: relative;
+
+        max-width: 576px;
+
+        z-index: 10;
+
+        @media screen and (max-width: 768px) {
+            padding: 400px 0 0 0;
+
+            max-width: 100%;
+
+            text-align: center;
+        }
+    }
+
+    // .readyTo__title
+
+    &__title {
+        color: var(--white);
+
+        margin: 0 0 17px 0;
+
+        @media screen and (max-width: 768px) {
+            margin: 0 0 0.47em 0;
+        }
+    }
+
+    // .readyTo__text
+
+    &__text {
+        color: var(--white);
+
+        margin: 0 0 17px 0;
+
+        @media screen and (max-width: 768px) {
+            margin: 0 0 1.06em 0;
+        }
+    }
+
+    // .readyTo__phone--1
+
+    &__phone--1 {
+        top: 78px;
+        right: 79px;
+
+        width: 422px;
+
+        z-index: 3;
+
+        @media screen and (max-width: 768px) {
+            top: 68px;
+            right: 73px;
+            width: 372px;
+        }
+    }
+
+    // .readyTo__phone--2
+
+    &__phone--2 {
+        top: 27px;
+        right: -90px;
+
+        width: 396px;
+
+        z-index: 2;
+
+        @media screen and (max-width: 768px) {
+            top: 17px;
+            right: -81px;
+            width: 356px;
+        }
+    }
+
+    // .readyTo__phone--3
+
+    &__phone--3 {
+        top: 24px;
+        right: -90px;
+
+        width: 226px;
+
+        z-index: 1;
+
+        @media screen and (max-width: 768px) {
+            top: 17px;
+            right: -81px;
+            width: 204px;
+        }
+    }
+
+    // .readyTo__circle
+
+    &__circle {
+        z-index: 0;
+    }
+
+    // .readyTo__circle--left
+
+    &__circle--left {
+        bottom: 0;
+        left: 0;
+
+        width: 392px;
+
+        @media screen and (max-width: 768px) {
+            width: 300px;
+        }
+    }
+
+    // .readyTo__circle--right
+
+    &__circle--right {
+        top: 0;
+        right: 0;
+
+        width: 360px;
+
+        @media screen and (max-width: 768px) {
+            width: 280px;
+        }
+    }
+
+    // .readyTo__star--white--left
+
+    &__star--white--left {
+        left: 423px;
+        bottom: 114px;
+
+        transform: rotate(45deg);
+
+        @media screen and (max-width: 768px) {
+            top: 30px;
+            left: 30px;
+            bottom: auto;
+        }
+    }
+
+    // .readyTo__star--white--right
+
+    &__star--white--right {
+        top: 31px;
+        right: 377px;
+
+        @media screen and (max-width: 768px) {
+            top: auto;
+            right: 30px;
+            bottom: 30px;
+        }
+    }
+
+    // .readyTo__gradient--right
+
+    &__gradient--right {
+        top: 16px;
+        right: -100px;
+
+        width: 466px;
+
+        @media screen and (max-width: 768px) {
+            top: 116px;
+            right: -30px;
+            width: 336px;
+        }
+    }
+
+    // .readyTo__star--left
+
+    &__star--left {
+        top: 135px;
+        left: -118px;
+
+        @media screen and (max-width: 768px) {
+            top: auto;
+            left: 20px;
+            bottom: -60px;
+        }
+    }
+
+    // .readyTo__star--right
+
+    &__star--right {
+        top: -87px;
+
+        right: -120px;
+
+        transform: rotate(25deg);
+
+        @media screen and (max-width: 768px) {
+            top: -70px;
+            right: 20px;
+        }
+    }
+
+    // .readyTo__gradient--left
+
+    &__gradient--left {
+        top: -192px;
+        left: -256px;
+
+        width: 535px;
+
+        z-index: -2;
+
+        @media screen and (max-width: 768px) {
+            top: -116px;
+            right: -30px;
+            width: 436px;
+        }
+    }
+}

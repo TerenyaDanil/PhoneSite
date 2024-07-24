@@ -1,0 +1,378 @@
+// Componets
+
+// Text
+.container {
+    position: relative;
+
+    max-width: 1090px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 768px) {
+        padding: 0 12px;
+    }
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+
+    @media screen and (max-width: 768px) {
+        font-size: 36px;
+    }
+}
+
+.subtitle {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.75;
+}
+
+.deskription {
+    color: var(--orange);
+
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.75;
+    letter-spacing: 0.16em;
+
+    text-transform: uppercase;
+
+    @media screen and (max-width: 768px) {
+        font-size: 16px;
+    }
+}
+
+.text {
+    color: var(--gray);
+
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.53;
+
+    @media screen and (max-width: 768px) {
+        font-size: 16px;
+    }
+}
+
+.link {
+    position: relative;
+    overflow: hidden;
+
+    color: var(--black);
+
+    font-size: 16px;
+    line-height: 1;
+
+    font-weight: 500;
+    text-decoration: none;
+
+    z-index: 1;
+
+    transition: color 0.1s ease-in-out;
+    circle,
+    path {
+        transition: fill 0.1s ease-in-out, stroke 0.1s ease-in-out;
+    }
+}
+
+.link:hover {
+    color: var(--orange);
+}
+
+// Button
+
+.button {
+    position: relative;
+    overflow: hidden;
+
+    min-width: 10em;
+    min-height: 3.3em;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.75;
+
+    padding: 0 1em;
+
+    background-color: transparent;
+
+    border-radius: 4px;
+
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+    text-decoration: none;
+
+    &:focus {
+        outline: none;
+    }
+
+    transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out;
+
+    svg,
+    path,
+    line,
+    polyline {
+        transition: fill 0.5s ease-in-out, stroke 0.5s ease-in-out;
+    }
+
+    span,
+    svg {
+        z-index: 2;
+    }
+
+    &--white {
+        color: var(--black);
+        background-color: var(--white);
+
+        border: 2px solid var(--white);
+
+        .button__circle {
+            background-color: var(--black);
+        }
+
+        &:hover {
+            color: var(--white);
+
+            path {
+                fill: var(--white);
+                stroke: var(--white);
+            }
+        }
+    }
+
+    &--black {
+        color: var(--white);
+        background-color: var(--black);
+
+        border: 2px solid var(--black);
+
+        path {
+            fill: var(--white);
+            stroke: var(--white);
+        }
+
+        .button__circle {
+            background-color: var(--white);
+        }
+
+        &:hover {
+            color: var(--black);
+
+            path {
+                fill: var(--black);
+                stroke: var(--black);
+            }
+        }
+    }
+
+    &--icon {
+        display: inline-flex;
+        align-items: center;
+    }
+
+    &__circle {
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translate(-50%, -50%);
+
+        display: block;
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+        transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+        z-index: 1;
+    }
+
+    &:hover {
+        .button__circle {
+            width: 225%;
+            height: 405px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 16px;
+    }
+}
+
+.icon-text {
+    display: inline-flex;
+    align-items: center;
+
+    &__img {
+        margin: 0 8px 0 0;
+    }
+}
+
+.text-icon {
+    display: inline-flex;
+    align-items: center;
+
+    &__img {
+        margin-left: 8px;
+    }
+}
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+// Nav
+
+.nav {
+    // .nav__link
+
+    display: flex;
+    align-items: center;
+
+    &__link {
+        font-size: 20px;
+
+        margin: 0 24px 0 0;
+
+        &:last-child {
+            margin-left: 0;
+        }
+
+        @media screen and (max-width: 768px) {
+            font-size: 24px;
+
+            margin: 0 0 40px 0;
+        }
+    }
+}
+
+.icon-btn__apple {
+    position: relative;
+
+    width: 26px;
+
+    top: -3px;
+}
+
+.icon-btn__arrow {
+    width: 1.3333333333em;
+}
+
+.icon-btn__play {
+    width: 1.5555555556em;
+    margin: 0 0.8888888889em 0 0;
+}
+
+.icon-link {
+    display: flex;
+    align-items: center;
+}
+
+.link-span {
+    margin: 0 0 0 8px;
+}
+
+.form {
+    position: relative;
+
+    &--mini {
+        width: 340px;
+
+        .form__button {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+
+            transform: translate(0, -50%);
+
+            .button {
+                font-size: 16px;
+
+                min-width: 160px;
+            }
+        }
+    }
+}
+
+.input {
+    color: var(--black);
+
+    font-size: 16px;
+    font-weight: 500;
+
+    background-color: var(--white);
+
+    border: none;
+    outline: none;
+
+    padding: 28px 24px;
+
+    box-shadow: 0 5px 10px 2px rgba(161, 161, 161, 0.1);
+
+    &::placeholder {
+        color: var(--placeholder-gray);
+    }
+}
+
+.icon-bg-star {
+    width: 48px;
+
+    @media screen and (max-width: 768px) {
+        width: 32px;
+    }
+}
+
+.icon-bg-star--big {
+    width: 64px;
+
+    @media screen and (max-width: 768px) {
+        width: 48px;
+    }
+}
+
+.burger {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    user-select: none;
+}
+
+.burger path {
+    fill: none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: var(--black);
+    stroke-width: 5.5;
+    stroke-linecap: round;
+}
+
+.burger path:nth-child(2) {
+    stroke: var(--orange);
+}
+
+.burger.active {
+    transform: rotate(45deg);
+}
+
+.burger .top {
+    stroke-dasharray: 40 139;
+}
+
+.burger .bottom {
+    stroke-dasharray: 40 180;
+}
+
+.burger.active .top {
+    stroke-dashoffset: -98px;
+}
+
+.burger.active .bottom {
+    stroke-dashoffset: -138px;
+}

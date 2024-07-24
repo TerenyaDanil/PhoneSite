@@ -1,0 +1,170 @@
+.customizable {
+    // .customizable__container
+
+    padding: 50px 0 50px 0;
+
+    &__container {
+        display: flex;
+        flex-direction: row-reverse;
+
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+
+    // .customizable__phone-wrap
+
+    &__phone-wrap {
+        position: relative;
+
+        width: 556px;
+        height: 560px;
+
+        @media screen and (max-width: 768px) {
+            width: auto;
+            height: 420px;
+        }
+    }
+
+    // .customizable__wrap
+
+    &__wrap {
+        padding: 158px 0 0 0;
+
+        max-width: 536px;
+
+        @media screen and (max-width: 768px) {
+            width: auto;
+
+            padding: 0;
+
+            margin: 0 0 30px 0;
+        }
+    }
+
+    // .customizable__text-wrap
+
+    &__text-wrap {
+    }
+
+    // .customizable__subtitle
+
+    &__subtitle {
+        font-size: 28px;
+
+        margin: 0 0 0.85em 0;
+
+        @media screen and (max-width: 768px) {
+            font-size: 22px;
+        }
+    }
+
+    // .customizable__subtitle-icon
+
+    &__subtitle-icon {
+        width: 1.71em;
+
+        margin: 0 0.57em 0 0;
+    }
+
+    // .customizable__text
+
+    &__text {
+    }
+
+    // .customizable__phone
+
+    &__phone {
+        top: -41px;
+        left: 56px;
+
+        width: 449.5px;
+
+        @media screen and (max-width: 768px) {
+            top: -20px;
+            left: 46px;
+            width: 350px;
+        }
+    }
+
+    // .customizable__card
+
+    &__card {
+        top: 129px;
+        left: 133px;
+
+        width: 260.3px;
+
+        @media screen and (max-width: 768px) {
+            top: 94px;
+            left: 81px;
+
+            width: 210px;
+        }
+    }
+
+    // .customizable__circle
+
+    &__circle {
+        top: -96px;
+        left: -128px;
+
+        width: 652px;
+
+        z-index: -1;
+
+        @media screen and (max-width: 768px) {
+            top: -20px;
+            left: -40px;
+
+            width: 400px;
+        }
+    }
+
+    // .customizable__gradient
+
+    &__gradient {
+        top: 36px;
+        left: -0px;
+
+        width: 539px;
+
+        z-index: -2;
+
+        @media screen and (max-width: 768px) {
+            top: 65px;
+            left: -100px;
+            right: auto;
+
+            width: 400px;
+        }
+    }
+
+    // .customizable__star--right
+
+    &__star--right {
+        top: 545px;
+        left: 960px;
+
+        transform: rotate(27deg);
+
+        @media screen and (max-width: 768px) {
+            top: auto;
+            left: auto;
+            right: 30px;
+            bottom: -50px;
+        }
+    }
+
+    // .customizable__star--left
+
+    &__star--left {
+        top: -76px;
+        left: 465px;
+
+        @media screen and (max-width: 768px) {
+            top: -70px;
+            left: 20px;
+        }
+    }
+}
