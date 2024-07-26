@@ -104,7 +104,6 @@ if (isMobile) {
                 headerContent.classList.toggle("active")
 
                 if (headerContent.classList.contains("active")) {
-                    console.log(headerAnimation)
                     gsap.from(headerAnimation, {
                         y: "50%",
                         opacity: 0,
