@@ -52,7 +52,7 @@
     // .footer__link
 
     &__link {
-        margin: 0 0 26px 0;
+        margin: 0 0 1.625em 0;
         &:last-child {
             margin: 0 0 0 0;
         }
@@ -71,6 +71,7 @@
     &__link--title {
         font-size: 32px;
 
+        margin: 0 0 0.9em 0;
         @media screen and (max-width: 768px) {
             font-size: 24px;
         }

@@ -86,12 +86,14 @@
     // .hero__button
 
     &__button {
-        margin: 0 40px 0 0;
+        margin: 0 36px 0 0;
     }
 
     // .hero__link
 
     &__link {
+        font-size: 18px;
+
         &:hover {
             circle {
                 stroke: var(--orange);

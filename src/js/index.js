@@ -49,7 +49,7 @@ if (!isMobile) {
                 const sectionTitle = section.querySelectorAll("[animation-title] .line")
                 const sectionText = section.querySelectorAll("[animation-text]")
 
-                const animationDuration = isMobile ? 0.8 : 0.5
+                const animationDuration = 0.5
                 const animationStart = "-75%"
 
                 if (sectionDeskription.length > 0) {
@@ -58,7 +58,7 @@ if (!isMobile) {
                         opacity: 0,
                         duration: animationDuration,
                         ease: "circ.out",
-                        stagger: 0.2,
+                        stagger: 0.1,
                         scrollTrigger: {
                             trigger: section,
                             start: animationStart,
