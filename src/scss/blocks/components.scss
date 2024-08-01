@@ -97,7 +97,7 @@
     font-weight: 500;
     line-height: 1.75;
 
-    padding: 0 1em;
+    padding: 0 1.2em;
 
     background-color: transparent;
 
@@ -142,7 +142,6 @@
 
             path {
                 fill: var(--white);
-                stroke: var(--white);
             }
         }
     }
@@ -155,7 +154,6 @@
 
         path {
             fill: var(--white);
-            stroke: var(--white);
         }
 
         .button__circle {
@@ -215,10 +213,6 @@
 .text-icon {
     display: inline-flex;
     align-items: center;
-
-    &__img {
-        margin-left: 8px;
-    }
 }
 
 .absolute {
@@ -255,20 +249,25 @@
 }
 
 .icon-btn__apple {
+    margin-left: 0.6em;
+
     position: relative;
 
-    width: 26px;
+    width: 1.55em;
 
-    top: -3px;
+    top: -0.16em;
 }
 
 .icon-btn__arrow {
-    width: 1.3333333333em;
+    margin: 0 0 0 0.5em;
+
+    width: 1.33em;
 }
 
 .icon-btn__play {
-    width: 1.5555555556em;
-    margin: 0 0.8888888889em 0 0;
+    margin: 0 0.6em 0 0;
+
+    width: 1.93em;
 }
 
 .icon-link {
@@ -296,13 +295,15 @@
             .button {
                 font-size: 16px;
 
-                min-width: 160px;
+                min-height: 3.8em;
             }
         }
     }
 }
 
 .input {
+    width: 100%;
+
     color: var(--black);
 
     font-size: 16px;
